@@ -55,7 +55,6 @@ export default defineConfig({
         // storageState: 'playwright/.auth/CmsAuth.json',
         screenshot: 'on',
       },
-      workers: 1,
     },
 
     // {
