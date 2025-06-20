@@ -2,7 +2,7 @@ import { test, expect, chromium } from '@playwright/test';
 import path from 'path';
 import fs from 'fs';
 
-const RUN_COUNT = 1; // Set how many times you want to run
+const RUN_COUNT = Number(process.env.RUN_COUNT) || 1;
 for (let i = 1; i <= RUN_COUNT; i++) {
   test.only(`Test ad with proxy - run #${i}`, async () => {
     const proxy = {
